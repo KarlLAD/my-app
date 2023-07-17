@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Bonjour from  './bonjour/index';
+import Ladour from './hero/index'
+import { Menu1, Menu2 } from './commun/Menu';
+import Vehicule from './vehicule/index'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Bonjour nom="LADOUR" prenom="Karl"/>
+      <Menu1/>
+      <Menu2/>
+      <Vehicule/>
+      
     </div>
   );
 }
